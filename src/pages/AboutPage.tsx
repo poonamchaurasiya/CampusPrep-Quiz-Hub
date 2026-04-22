@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import {
   BookOpen, Code2, Database, Globe, Layers, Brain,
-  Target, ChevronRight
+  Target, ChevronRight, Github, Linkedin, User
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -172,11 +172,55 @@ export function AboutPage() {
           </div>
         </motion.div>
 
-        {/* CTA */}
+        {/* Developer Profile */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35 }}
+          className="bg-white dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700/50 p-6 mb-6"
+        >
+          <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-4">👩‍💻 Developer</h2>
+          <div className="flex flex-col sm:flex-row items-center gap-5">
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-violet-600 flex items-center justify-center shadow-lg shadow-primary-500/25 flex-shrink-0">
+              <User className="w-10 h-10 text-white" />
+            </div>
+            <div className="text-center sm:text-left flex-1">
+              <h3 className="text-lg font-bold text-slate-900 dark:text-white">
+                Poonam Chaurasia
+              </h3>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                Final-year B.Tech student passionate about frontend development, data structures & algorithms, 
+                and building polished, user-centric web applications.
+              </p>
+              <div className="flex items-center justify-center sm:justify-start gap-3 mt-3">
+                <a
+                  href="https://github.com/poonamchaurasiya"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-700 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
+                >
+                  <Github className="w-4 h-4" />
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/poonam-chaurasiya/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 dark:bg-blue-900/30 text-sm font-medium text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors"
+                >
+                  <Linkedin className="w-4 h-4" />
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
           className="text-center"
         >
           <Link
