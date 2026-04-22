@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "Poonam Chaurasia",
+    "url": "https://github.com/poonamchaurasiya"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
