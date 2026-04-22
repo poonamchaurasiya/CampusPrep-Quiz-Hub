@@ -9,7 +9,7 @@ lerna-debug.log*
 
 walkthrough.md
 implementation_plan.md
-tasks.md
+task.md
 
 node_modules
 dist
@@ -23,7 +23,7 @@ dist-ssr
 .DS_Store
 walkthrough.md
 implementation_plan.md
-tasks.md
+task.md
 *.suo
 *.ntvs*
 *.njsproj
